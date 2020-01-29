@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hatzalah Emergencias</string>
+    <string-array name="Contactos">
+        <item>Tomas Jarabroviski</item>
+        <item>Ezequiel binker</item>
+    </string-array>
+    <string name="API_KEY_PLACES">AIzaSyAcZ_qJq9UYdOqC0Khuxuj2jR-X_91cSoo</string>
+</resources>

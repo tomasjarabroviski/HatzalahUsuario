@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ActividadPrincipal">
+
+    <ImageButton
+        android:id="@+id/imgbAtrasListaDirecciones"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/flecha_atras"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flecha_atras" />
+
+    <TextView
+        android:id="@+id/txtListaDeFamiliares"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="98dp"
+        android:gravity="center"
+        android:text="Lista de direcciones"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgbAtrasListaDirecciones"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="12dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/ListView_ListaDeDirecciones"
+        app:layout_constraintTop_toBottomOf="@+id/txtListaDeFamiliares"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <Button
+        android:id="@+id/btnAgregarFamiliar"
+        android:layout_width="339dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/botonredondeado"
+        android:text="Ingresar direccion"
+        android:textColor="@color/White"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListView_ListaDeDirecciones" />
+
+    <ListView
+        android:id="@+id/ListView_ListaDeDirecciones"
+        android:layout_width="match_parent"
+        android:layout_height="421dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAgregarFamiliar"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:layout_editor_absoluteX="14dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

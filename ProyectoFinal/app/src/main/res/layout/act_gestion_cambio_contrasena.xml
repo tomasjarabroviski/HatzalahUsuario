@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageButton
+        android:id="@+id/imgbAtrasGestionCambioContrasena"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/flecha_atras"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/txtPalabraContrasena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flecha_atras"
+        tools:srcCompat="@drawable/flecha_atras" />
+
+    <TextView
+        android:id="@+id/txtPalabraContrasena"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="103dp"
+        android:gravity="center"
+        android:text="Cambio de contraseña"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgbAtrasGestionCambioContrasena"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="411dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="12dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/edtxGestionCambioContrasenaAntigua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPalabraContrasena" />
+
+    <EditText
+        android:id="@+id/edtxGestionCambioContrasenaAntigua"
+        android:layout_width="383dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="14dp"
+        android:ems="10"
+        android:hint="Ingrese contraseña anterior"
+        android:inputType="textPassword"
+        android:textColor="@color/White"
+        android:textColorHint="@color/White"
+        app:layout_constraintBottom_toTopOf="@+id/edtxGestionCambioContrasenaNueva1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <EditText
+        android:id="@+id/edtxGestionCambioContrasenaNueva1"
+        android:layout_width="383dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="14dp"
+        android:ems="10"
+        android:hint="Ingrese contraseña nueva"
+        android:inputType="textPassword"
+        android:textColor="@color/White"
+        android:textColorHint="@color/White"
+        app:layout_constraintBottom_toTopOf="@+id/edtxGestionCambioContrasenaNueva2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxGestionCambioContrasenaAntigua" />
+
+    <EditText
+        android:id="@+id/edtxGestionCambioContrasenaNueva2"
+        android:layout_width="383dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="14dp"
+        android:ems="10"
+        android:hint="Reingrese contraseña nueva"
+        android:inputType="textPassword"
+        android:textColor="@color/White"
+        android:textColorHint="@color/White"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuardarGestionContrasena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxGestionCambioContrasenaNueva1" />
+
+
+    <Button
+        android:id="@+id/btnGuardarGestionContrasena"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/botonredondeado"
+        android:text="GUARDAR"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxGestionCambioContrasenaNueva2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
